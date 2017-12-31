@@ -23,6 +23,8 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ### Removed
 
 ### Fixed
+- Allow colons and semicolons in attribute value matchers
+  ([#456](https://github.com/MyIntervals/emogrifier/pull/456))
 
 
 ## 2.0.0
