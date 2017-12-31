@@ -942,7 +942,7 @@ class EmogrifierTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      *
-     * @expectedException \InvalidArgumentException
+     * @expectedException \Symfony\Component\CssSelector\Exception\SyntaxErrorException
      */
     public function emogrifyInDebugModeForInvalidCssSelectorThrowsException()
     {
@@ -1858,9 +1858,9 @@ class EmogrifierTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      *
-     * @expectedException \InvalidArgumentException
+     * @expectedException \Symfony\Component\CssSelector\Exception\SyntaxErrorException
      */
-    public function emogrifyInDebugModeThrowsInvalidArgumentExceptionForInvalidExcludedSelector()
+    public function emogrifyInDebugModeThrowsExceptionForInvalidExcludedSelector()
     {
         $this->subject->setDebug(true);
 
@@ -2360,9 +2360,9 @@ class EmogrifierTest extends \PHPUnit_Framework_TestCase
     /**
      * @test
      *
-     * @expectedException \InvalidArgumentException
+     * @expectedException \Symfony\Component\CssSelector\Exception\SyntaxErrorException
      */
-    public function emogrifyInDebugModeThrowsInvalidArgumentExceptionForInvalidSelectorsInMediaQueryBlocks()
+    public function emogrifyInDebugModeThrowsExceptionForInvalidSelectorsInMediaQueryBlocks()
     {
         $this->subject->setDebug(true);
 
